@@ -9,10 +9,10 @@ const App = () => {
       <h2 style={{color:"green"}}>And Hello React!!!</h2>
 
       <div className="ui container comments">
-      <ApproveCard/>
-      <ApproveCard/>
-      <ApproveCard/>
-      <ApproveCard/>
+      <ApproveCard name="Mark" date="07/05/2020" comment="What a beautiful piece"/>
+      <ApproveCard name="Alan" date="01/01/2021" comment="What a beuatiful picture"/>
+      <ApproveCard name="Bob" date="06/20/2020" comment="What a nice piece"/>
+      
         
       </div>
       
