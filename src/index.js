@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import ApproveCard from './components/ApproveCard'
+import faker from 'faker'
+import CommentDetail from './components/CommentDetail'
 
 const App = () => {
   return (
@@ -9,9 +11,31 @@ const App = () => {
       <h2 style={{color:"green"}}>And Hello React!!!</h2>
 
       <div className="ui container comments">
-      <ApproveCard name="Mark" date="07/05/2020" comment="What a beautiful piece"/>
-      <ApproveCard name="Alan" date="01/01/2021" comment="What a beuatiful picture"/>
-      <ApproveCard name="Bob" date="06/20/2020" comment="What a nice piece"/>
+      <ApproveCard>
+      <CommentDetail name="Mark" 
+      date="07/05/2020" 
+      comment="What a beautiful piece" 
+      avatar={faker.image.image()}/>
+      </ApproveCard>
+      
+      
+      
+      
+      
+      <ApproveCard>
+      <CommentDetail name="Alan" 
+      date="01/01/2021" 
+      comment="What a beuatiful picture" 
+      avatar={faker.image.image()}/>
+     </ApproveCard>
+
+
+      <ApproveCard>
+        <CommentDetail name="Bob" 
+      date="06/20/2020" 
+      comment="What a nice piece" 
+      avatar={faker.image.image()}/>
+      </ApproveCard>
       
         
       </div>
