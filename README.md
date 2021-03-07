@@ -1,3 +1,11 @@
+# ChangeLog
+```yarn add -D gh-pages```
+
+Then scripts added to package.json
+"predeploy" : "npm run build"
+"deploy" : "gh-pages -d build"
+"homepage" : "https://murat6161.github.io/react-component"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
