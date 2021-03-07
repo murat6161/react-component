@@ -1,17 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <div style={{backgroundColor:'lightblue', display:'grid', height:'100vh', placeContent:'center'}}>
+      <h1 style={{backgroundColor:"yellow", color:"blue"}}>Hello World!</h1>
+      <h2 style={{color:"green"}}>And Hello React!!!</h2>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+      <div className="ui container comments">
+        <div className="ui card">
+          <div className="comment">
+            
+            <a href="/" className="avatar"><img alt="avatar"/></a>
+            <div className="content">
+              <a href="/" className="author">Mark Who</a>
+              <div className="metadata">
+                <span className="date">07/12/2020</span>
+              </div>
+              <div className="text">What a nice blog!</div>
+            </div>
+          </div>
+          <div className="extra content">
+              <div className="ui two buttons">
+                <div className="ui basic green button">Approve</div>
+                <div className="ui basic red button">Reject</div>
+          </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+      
+    </div>
+  )
+}
+
+ReactDOM.render(<App/>, document.querySelector('#root'))
